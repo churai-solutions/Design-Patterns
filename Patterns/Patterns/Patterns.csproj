@@ -45,6 +45,10 @@
     <Compile Include="Facade\SwimmingpoolFacade.cs" />
     <Compile Include="Facade\SwimmingpoolSystem.cs" />
     <Compile Include="Facade\WardrobeSystem.cs" />
+    <Compile Include="Mediator\BodyPart.cs" />
+    <Compile Include="Mediator\BrainMediator.cs" />
+    <Compile Include="Mediator\Ear.cs" />
+    <Compile Include="Mediator\Face.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

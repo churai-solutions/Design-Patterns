@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Patterns.Facade;
+using System;
 
 namespace Patterns
 {
@@ -10,6 +7,14 @@ namespace Patterns
     {
         static void Main(string[] args)
         {
+            // Facade.
+            {
+                Console.WriteLine("----    Testing Facade pattern    ----");
+                var swimmingPoodSystemsFacade = new SwimmingpoolFacade();
+                swimmingPoodSystemsFacade.GoToASwimmingPool();
+                Console.WriteLine("----    Testing Facade pattern finished    ----");
+                Console.ReadKey();
+            }
         }
     }
 }

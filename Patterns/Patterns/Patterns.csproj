@@ -41,21 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Facade\ReceptionSystem.cs" />
-    <Compile Include="Facade\SwimmingpoolFacade.cs" />
-    <Compile Include="Facade\SwimmingpoolSystem.cs" />
-    <Compile Include="Facade\WardrobeSystem.cs" />
-    <Compile Include="Mediator\BodyPart.cs" />
-    <Compile Include="Mediator\BrainMediator.cs" />
-    <Compile Include="Mediator\Ear.cs" />
-    <Compile Include="Mediator\Face.cs" />
+    <Compile Include="Structural\Facade\ReceptionSystem.cs" />
+    <Compile Include="Structural\Facade\SwimmingpoolFacade.cs" />
+    <Compile Include="Structural\Facade\SwimmingpoolSystem.cs" />
+    <Compile Include="Structural\Facade\WardrobeSystem.cs" />
+    <Compile Include="Behavioral\Mediator\BodyPart.cs" />
+    <Compile Include="Behavioral\Mediator\BrainMediator.cs" />
+    <Compile Include="Behavioral\Mediator\Ear.cs" />
+    <Compile Include="Behavioral\Mediator\Face.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Creational\Singleton\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

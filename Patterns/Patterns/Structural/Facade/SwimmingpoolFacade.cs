@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Patterns.Facade
+namespace Patterns.Structural.Facade
 {
     // Представляє собою фасад докількох підсистем басейну
     public sealed class SwimmingpoolFacade

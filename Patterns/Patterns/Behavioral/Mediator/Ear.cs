@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Patterns.Mediator
+namespace Patterns.Behavioral.Mediator
 {
     public class Ear : BodyPart
     {

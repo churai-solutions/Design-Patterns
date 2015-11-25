@@ -1,6 +1,6 @@
-﻿using Patterns.Facade;
+﻿using Patterns.Behavioral.Mediator;
+using Patterns.Structural.Facade;
 using System;
-using Patterns.Mediator;
 
 namespace Patterns
 {

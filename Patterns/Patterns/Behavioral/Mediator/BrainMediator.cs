@@ -1,4 +1,4 @@
-﻿namespace Patterns.Mediator
+﻿namespace Patterns.Behavioral.Mediator
 {
     public class BrainMediator
     {

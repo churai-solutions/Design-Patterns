@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Patterns.Facade
+namespace Patterns.Structural.Facade
 {
     sealed class SwimmingpoolSystem
     {

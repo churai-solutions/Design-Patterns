@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creational\Singleton\LoggerSingleton.cs" />
     <Compile Include="Structural\Facade\ReceptionSystem.cs" />
     <Compile Include="Structural\Facade\SwimmingpoolFacade.cs" />
     <Compile Include="Structural\Facade\SwimmingpoolSystem.cs" />
@@ -55,9 +56,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Creational\Singleton\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

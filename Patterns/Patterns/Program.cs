@@ -1,4 +1,5 @@
 ﻿using Patterns.Behavioral.Mediator;
+using Patterns.Creational.Singleton;
 using Patterns.Structural.Facade;
 using System;
 
@@ -32,7 +33,24 @@ namespace Patterns
                 brain.Face = face;
 
                 ear.HearSounds();
-                
+
+                Console.WriteLine("----    Testing Mediator pattern finished    ----");
+                Console.ReadKey();
+            }
+
+            Console.WriteLine("--------------------------------------------------");
+
+            // Singleton
+            {
+                Console.WriteLine("----    Testing Mediator pattern    ----");
+
+                var loggerSingleton = LoggerSingleton.GetInstance();
+                loggerSingleton.TestId = 7;
+
+                var loggerSingleton2 = LoggerSingleton.GetInstance();
+
+                Console.WriteLine(loggerSingleton2.ToString());
+
                 Console.WriteLine("----    Testing Mediator pattern finished    ----");
                 Console.ReadKey();
             }

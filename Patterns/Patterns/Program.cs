@@ -1,4 +1,5 @@
 ﻿using Patterns.Behavioral.Mediator;
+using Patterns.Creational.Builder;
 using Patterns.Creational.Singleton;
 using Patterns.Structural.Facade;
 using System;
@@ -42,7 +43,7 @@ namespace Patterns
 
             // Singleton
             {
-                Console.WriteLine("----    Testing Mediator pattern    ----");
+                Console.WriteLine("----    Testing Singleton pattern    ----");
 
                 var loggerSingleton = LoggerSingleton.GetInstance();
                 loggerSingleton.TestId = 7;
@@ -51,7 +52,31 @@ namespace Patterns
 
                 Console.WriteLine(loggerSingleton2.ToString());
 
-                Console.WriteLine("----    Testing Mediator pattern finished    ----");
+                Console.WriteLine("----    Testing Singleton pattern finished    ----");
+                Console.ReadKey();
+            }
+
+            Console.WriteLine("--------------------------------------------------");
+
+            // Builder
+            {
+                Console.WriteLine("----    Testing Builder pattern    ----");
+
+                var gamingBuilder = new GamingLaptopBuilder();
+                var travelingBuilder = new TravelingLaptopBuilder();
+                var director = new BuilderDirector(travelingBuilder);
+
+                var laptop = director.ConstructLaptop();
+
+                Console.WriteLine(laptop.ToString());
+
+                director.ChangeBuilderTo(gamingBuilder);
+
+                var laptop2 = director.ConstructLaptop();
+
+                Console.WriteLine(laptop2.ToString());
+
+                Console.WriteLine("----    Testing Builder pattern finished    ----");
                 Console.ReadKey();
             }
         }

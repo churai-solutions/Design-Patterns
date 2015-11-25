@@ -41,6 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creational\Builder\AbstractBuilder.cs" />
+    <Compile Include="Creational\Builder\BuilderDirector.cs" />
+    <Compile Include="Creational\Builder\TravelingLaptopBuilder.cs" />
+    <Compile Include="Creational\Builder\GamingLaptopBuilder.cs" />
+    <Compile Include="Creational\Builder\Laptop.cs" />
     <Compile Include="Creational\Singleton\LoggerSingleton.cs" />
     <Compile Include="Structural\Facade\ReceptionSystem.cs" />
     <Compile Include="Structural\Facade\SwimmingpoolFacade.cs" />

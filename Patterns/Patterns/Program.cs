@@ -1,4 +1,5 @@
 ﻿using Patterns.Behavioral.Mediator;
+using Patterns.Creational.AbstractFactory;
 using Patterns.Creational.Builder;
 using Patterns.Creational.FactoryMethod;
 using Patterns.Creational.Singleton;
@@ -90,6 +91,20 @@ namespace Patterns
                 Console.WriteLine(ConcreteFactory.CreateProduct(ProductType.Type2));
 
                 Console.WriteLine("----    Testing Factory Method pattern finished    ----");
+                Console.ReadKey();
+            }
+
+            Console.WriteLine("--------------------------------------------------");
+
+            // Abstract Factory
+            {
+                Console.WriteLine("----    Testing Abstract Factory pattern    ----");
+
+                AbstractToysFactory factory = new TeddyToyFactory();
+                var createdToy = factory.CreateToy();
+                Console.WriteLine(createdToy.ToString());
+
+                Console.WriteLine("----    Testing Abstract Factory pattern finished    ----");
                 Console.ReadKey();
             }
         }

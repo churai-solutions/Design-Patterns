@@ -41,6 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creational\AbstractFactory\AbstractToy.cs" />
+    <Compile Include="Creational\AbstractFactory\AbstractToysFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\BoBearToy.cs" />
+    <Compile Include="Creational\AbstractFactory\BoToyFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\TeddyBearToy.cs" />
+    <Compile Include="Creational\AbstractFactory\TeddyToyFactory.cs" />
     <Compile Include="Creational\Builder\AbstractBuilder.cs" />
     <Compile Include="Creational\Builder\BuilderDirector.cs" />
     <Compile Include="Creational\Builder\TravelingLaptopBuilder.cs" />

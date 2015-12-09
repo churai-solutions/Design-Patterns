@@ -1,5 +1,6 @@
 ﻿using Patterns.Behavioral.Mediator;
 using Patterns.Creational.Builder;
+using Patterns.Creational.FactoryMethod;
 using Patterns.Creational.Singleton;
 using Patterns.Structural.Facade;
 using System;
@@ -77,6 +78,18 @@ namespace Patterns
                 Console.WriteLine(laptop2.ToString());
 
                 Console.WriteLine("----    Testing Builder pattern finished    ----");
+                Console.ReadKey();
+            }
+
+            Console.WriteLine("--------------------------------------------------");
+
+            // Factory Method
+            {
+                Console.WriteLine("----    Testing Factory Method pattern    ----");
+
+                Console.WriteLine(ConcreteFactory.CreateProduct(ProductType.Type2));
+
+                Console.WriteLine("----    Testing Factory Method pattern finished    ----");
                 Console.ReadKey();
             }
         }

@@ -46,6 +46,11 @@
     <Compile Include="Creational\Builder\TravelingLaptopBuilder.cs" />
     <Compile Include="Creational\Builder\GamingLaptopBuilder.cs" />
     <Compile Include="Creational\Builder\Laptop.cs" />
+    <Compile Include="Creational\FactoryMethod\ConcreteFactory.cs" />
+    <Compile Include="Creational\FactoryMethod\IGeneralProduct.cs" />
+    <Compile Include="Creational\FactoryMethod\ProductOfType2.cs" />
+    <Compile Include="Creational\FactoryMethod\ProductOfType1.cs" />
+    <Compile Include="Creational\FactoryMethod\ProductType.cs" />
     <Compile Include="Creational\Singleton\LoggerSingleton.cs" />
     <Compile Include="Structural\Facade\ReceptionSystem.cs" />
     <Compile Include="Structural\Facade\SwimmingpoolFacade.cs" />

@@ -57,6 +57,8 @@
     <Compile Include="Creational\FactoryMethod\ProductOfType2.cs" />
     <Compile Include="Creational\FactoryMethod\ProductOfType1.cs" />
     <Compile Include="Creational\FactoryMethod\ProductType.cs" />
+    <Compile Include="Creational\Prototype\ProtorypeDirector.cs" />
+    <Compile Include="Creational\Prototype\Prototype.cs" />
     <Compile Include="Creational\Singleton\LoggerSingleton.cs" />
     <Compile Include="Structural\Facade\ReceptionSystem.cs" />
     <Compile Include="Structural\Facade\SwimmingpoolFacade.cs" />

@@ -2,6 +2,7 @@
 using Patterns.Creational.AbstractFactory;
 using Patterns.Creational.Builder;
 using Patterns.Creational.FactoryMethod;
+using Patterns.Creational.Prototype;
 using Patterns.Creational.Singleton;
 using Patterns.Structural.Facade;
 using System;
@@ -105,6 +106,20 @@ namespace Patterns
                 Console.WriteLine(createdToy.ToString());
 
                 Console.WriteLine("----    Testing Abstract Factory pattern finished    ----");
+                Console.ReadKey();
+            }
+
+            Console.WriteLine("--------------------------------------------------");
+
+            // Prototype
+            {
+                Console.WriteLine("----    Testing Prototype pattern    ----");
+
+                var prototype = ProtorypeDirector.GetFilledPrototype();
+                prototype.Parameter2 = prototype.Parameter2 + " changed!";
+                Console.WriteLine(prototype.ToString());
+
+                Console.WriteLine("----    Testing Prototype pattern finished    ----");
                 Console.ReadKey();
             }
         }

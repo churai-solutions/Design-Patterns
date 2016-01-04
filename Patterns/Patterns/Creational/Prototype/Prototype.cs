@@ -17,12 +17,7 @@ namespace Patterns.Creational.Prototype
 
         public override string ToString()
         {
-            return string.Format(
-                "Name: {0}, Age: {1}, Parameter1: {2}, Parameter2: {3}",
-                Name,
-                Age,
-                Parameter1,
-                Parameter2);
+            return $"Name: {Name}, Age: {Age}, Parameter1: {Parameter1}, Parameter2: {Parameter2}";
         }
     }
 }

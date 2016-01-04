@@ -6,7 +6,7 @@
 
         public override string ToString()
         {
-            return string.Format("My name is {0}", Name);
+            return $"My name is {Name}";
         }
     }
 }

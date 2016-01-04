@@ -13,7 +13,7 @@
 
         public override string ToString()
         {
-            return string.Format("Computer configuration: Processor '{0}', Memory '{1}'", Processor, Memory);
+            return $"Computer configuration: Processor '{Processor}', Memory '{Memory}'";
         }
     }
 }

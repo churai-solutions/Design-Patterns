@@ -60,6 +60,7 @@
     <Compile Include="Creational\FactoryMethod\ProductType.cs" />
     <Compile Include="Creational\Prototype\ProtorypeDirector.cs" />
     <Compile Include="Creational\Prototype\Prototype.cs" />
+    <Compile Include="Creational\Singleton\DoubleCheckedLockedSingleton.cs" />
     <Compile Include="Creational\Singleton\LazySingleton.cs" />
     <Compile Include="Creational\Singleton\LoggerSingleton.cs" />
     <Compile Include="Structural\Facade\ReceptionSystem.cs" />

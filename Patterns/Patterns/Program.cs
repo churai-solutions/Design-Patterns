@@ -6,6 +6,7 @@ using Patterns.Creational.Prototype;
 using Patterns.Creational.Singleton;
 using Patterns.Structural.Facade;
 using System;
+using Patterns.Behavioral.Strategy;
 
 namespace Patterns
 {
@@ -120,6 +121,22 @@ namespace Patterns
                 Console.WriteLine(prototype.ToString());
 
                 Console.WriteLine("----    Testing Prototype pattern finished    ----");
+                Console.ReadKey();
+            }
+
+            Console.WriteLine("--------------------------------------------------");
+
+            // Strategy
+            {
+                Console.WriteLine("----    Testing Strategy pattern    ----");
+
+                var strategyOne = new StrategyOne();
+                var strategyTwo = new StrategyTwo();
+
+                StrategyClient.DoJobUsingSomeStrategy(strategyOne, "data parameter");
+                StrategyClient.DoJobUsingSomeStrategy(strategyTwo, "data parameter");
+
+                Console.WriteLine("----    Testing Strategy pattern finished    ----");
                 Console.ReadKey();
             }
         }

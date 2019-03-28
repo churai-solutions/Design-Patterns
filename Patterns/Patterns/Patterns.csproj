@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -41,12 +42,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioral\Strategy\IStrategy.cs" />
+    <Compile Include="Behavioral\Strategy\StrategyClient.cs" />
+    <Compile Include="Behavioral\Strategy\StrategyTwo.cs" />
+    <Compile Include="Behavioral\Strategy\StrategyOne.cs" />
+    <Compile Include="Behavioral\TemplateMethod\AbstractClassWithTemplateMethod.cs" />
+    <Compile Include="Behavioral\TemplateMethod\ConcreteClassWithTemplateMethodUsing.cs" />
+    <Compile Include="Creational\AbstractFactory\AbstractToy.cs" />
+    <Compile Include="Creational\AbstractFactory\AbstractToysFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\BoBearToy.cs" />
+    <Compile Include="Creational\AbstractFactory\BoToyFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\TeddyBearToy.cs" />
+    <Compile Include="Creational\AbstractFactory\TeddyToyFactory.cs" />
+    <Compile Include="Creational\Builder\AbstractBuilder.cs" />
+    <Compile Include="Creational\Builder\BuilderDirector.cs" />
+    <Compile Include="Creational\Builder\TravelingLaptopBuilder.cs" />
+    <Compile Include="Creational\Builder\GamingLaptopBuilder.cs" />
+    <Compile Include="Creational\Builder\Laptop.cs" />
+    <Compile Include="Creational\FactoryMethod\ConcreteFactory.cs" />
+    <Compile Include="Creational\FactoryMethod\IGeneralProduct.cs" />
+    <Compile Include="Creational\FactoryMethod\ProductOfType2.cs" />
+    <Compile Include="Creational\FactoryMethod\ProductOfType1.cs" />
+    <Compile Include="Creational\FactoryMethod\ProductType.cs" />
+    <Compile Include="Creational\Prototype\ProtorypeDirector.cs" />
+    <Compile Include="Creational\Prototype\Prototype.cs" />
+    <Compile Include="Creational\Singleton\DoubleCheckedLockedSingleton.cs" />
+    <Compile Include="Creational\Singleton\LazySingleton.cs" />
+    <Compile Include="Creational\Singleton\LoggerSingleton.cs" />
+    <Compile Include="Structural\Facade\ReceptionSystem.cs" />
+    <Compile Include="Structural\Facade\SwimmingpoolFacade.cs" />
+    <Compile Include="Structural\Facade\SwimmingpoolSystem.cs" />
+    <Compile Include="Structural\Facade\WardrobeSystem.cs" />
+    <Compile Include="Behavioral\Mediator\BodyPart.cs" />
+    <Compile Include="Behavioral\Mediator\BrainMediator.cs" />
+    <Compile Include="Behavioral\Mediator\Ear.cs" />
+    <Compile Include="Behavioral\Mediator\Face.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

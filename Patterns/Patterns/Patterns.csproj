@@ -46,6 +46,8 @@
     <Compile Include="Behavioral\Strategy\StrategyClient.cs" />
     <Compile Include="Behavioral\Strategy\StrategyTwo.cs" />
     <Compile Include="Behavioral\Strategy\StrategyOne.cs" />
+    <Compile Include="Behavioral\TemplateMethod\AbstractClassWithTemplateMethod.cs" />
+    <Compile Include="Behavioral\TemplateMethod\ConcreteClassWithTemplateMethodUsing.cs" />
     <Compile Include="Creational\AbstractFactory\AbstractToy.cs" />
     <Compile Include="Creational\AbstractFactory\AbstractToysFactory.cs" />
     <Compile Include="Creational\AbstractFactory\BoBearToy.cs" />

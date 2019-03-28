@@ -7,6 +7,7 @@ using Patterns.Creational.Singleton;
 using Patterns.Structural.Facade;
 using System;
 using Patterns.Behavioral.Strategy;
+using Patterns.Behavioral.TemplateMethod;
 
 namespace Patterns
 {
@@ -137,6 +138,19 @@ namespace Patterns
                 StrategyClient.DoJobUsingSomeStrategy(strategyTwo, "data parameter");
 
                 Console.WriteLine("----    Testing Strategy pattern finished    ----");
+                Console.ReadKey();
+            }
+
+            Console.WriteLine("--------------------------------------------------");
+
+            // Template Method
+            {
+                Console.WriteLine("----    Testing Template Method pattern    ----");
+
+                var templateMethodImplementationClassObject = new ConcreteClassWithTemplateMethodUsing();
+                templateMethodImplementationClassObject.DoSomeTemplateMethodJob();
+
+                Console.WriteLine("----    Testing Template Method pattern finished    ----");
                 Console.ReadKey();
             }
         }

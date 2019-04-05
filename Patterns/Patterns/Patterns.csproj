@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behavioral\Iterator\EnumerableDataSource.cs" />
     <Compile Include="Behavioral\Strategy\IStrategy.cs" />
     <Compile Include="Behavioral\Strategy\StrategyClient.cs" />
     <Compile Include="Behavioral\Strategy\StrategyTwo.cs" />
@@ -84,6 +85,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <None Include="Behavioral\Iterator\iterator.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

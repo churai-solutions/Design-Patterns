@@ -6,6 +6,7 @@ using Patterns.Creational.Prototype;
 using Patterns.Creational.Singleton;
 using Patterns.Structural.Facade;
 using System;
+using Patterns.Behavioral.Iterator;
 using Patterns.Behavioral.Strategy;
 using Patterns.Behavioral.TemplateMethod;
 
@@ -151,6 +152,23 @@ namespace Patterns
                 templateMethodImplementationClassObject.DoSomeTemplateMethodJob();
 
                 Console.WriteLine("----    Testing Template Method pattern finished    ----");
+                Console.ReadKey();
+            }
+
+            Console.WriteLine("--------------------------------------------------");
+
+            // Iterator
+            {
+                Console.WriteLine("----    Testing Iterator pattern    ----");
+
+                var iterator = new EnumerableDataSource(new[] {"one", "two"});
+
+                foreach (var item in iterator)
+                {
+                    Console.WriteLine(item);
+                }
+
+                Console.WriteLine("----    Testing Iterator pattern finished    ----");
                 Console.ReadKey();
             }
         }

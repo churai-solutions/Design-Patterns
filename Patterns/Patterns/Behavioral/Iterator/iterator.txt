@@ -1,0 +1,1 @@
+﻿Iterator pattern is represented by IEnumerable<T> and IEnumerator<T>. 

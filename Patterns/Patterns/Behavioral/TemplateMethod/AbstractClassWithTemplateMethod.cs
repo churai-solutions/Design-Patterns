@@ -7,9 +7,13 @@ namespace Patterns.Behavioral.TemplateMethod
         public void DoSomeTemplateMethodJob()
         {
             Console.WriteLine("Template method start ----------------");
+
             PrimitiveOperation1();
+
             Console.WriteLine("Template method middle ----------------");
+
             PrimitiveOperation2();
+
             Console.WriteLine("Template method finish ----------------");
         }
 
